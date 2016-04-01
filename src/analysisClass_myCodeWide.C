@@ -45,7 +45,7 @@ void analysisClass::Loop()
    h_eta1stJet->Sumw2();
    TH1F *h_eta2ndJet = new TH1F ("h_eta2ndJet","",5,-2.5,2.5);
    h_eta2ndJet->Sumw2();
-   TH1F *h_DijetMass = new TH1F ("h_DijetMass","",600,0,6000);
+   TH1F *h_DijetMass = new TH1F ("h_DijetMass","",14000,0,14000);
    h_DijetMass->Sumw2();
    TH1F *h_DeltaETAjj = new TH1F ("h_DeltaETAjj","",120,0,3.);
    h_DeltaETAjj->Sumw2();
@@ -144,8 +144,8 @@ void analysisClass::Loop()
         MJJWide = wdijet.M();
         DeltaEtaJJWide = fabs(wj1.Eta()-wj2.Eta());
         DeltaPhiJJWide = fabs(wj1.DeltaPhi(wj2));
-
-        // Put widejets in the container
+         h_DijetMass->Fill(wdijet.M());
+         // Put widejets in the container
         wj1math.SetPtEtaPhiM(wj1.Pt(), wj1.Eta(), wj1.Phi(), wj1.M());
         wj2math.SetPtEtaPhiM(wj2.Pt(), wj2.Eta(), wj2.Phi(), wj2.M());  
         widejets.push_back( wj1math );
@@ -181,12 +181,12 @@ void analysisClass::Loop()
          // Calculate Mjj
          fillVariableWithValue( "Dijet_MassW", wdijet.M() ) ;
          fillVariableWithValue( "Dijet_MassA", mjjAK8 ) ;  
-         fillVariableWithValue( "Dijet_MassC", mjjCA8 ) ;
+         //fillVariableWithValue( "Dijet_MassC", mjjCA8 ) ;
          if(wdijet.M()<1){
            std::cout << " INV MASS IS " << wdijet.M() << std::endl;
            std::cout << " Delta Eta IS " << DeltaEtaJJWide << " n is  " << widejets.size() << std::endl;
            std::cout << " INV MASS FROM NTUPLE AK8 " << mjjAK8 << std::endl;
-           std::cout << " INV MASS FROM NTUPLE CA8 " << mjjCA8 << std::endl;
+           ///std::cout << " INV MASS FROM NTUPLE CA8 " << mjjCA8 << std::endl;
           }
 
         fillVariableWithValue( "phi_j2", widejets[1].Phi());
@@ -222,7 +222,7 @@ void analysisClass::Loop()
 
      if( widejets.size() >= 2) {
       h_nJetFinal->Fill(widejets.size());
-      h_DijetMass->Fill(wdijet.M());
+    //  h_DijetMass->Fill(wdijet.M());
       h_pT1stJet->Fill(widejets[0].Pt());
       h_pT2ndJet->Fill(widejets[1].Pt());
       h_eta1stJet->Fill(widejets[0].Eta());

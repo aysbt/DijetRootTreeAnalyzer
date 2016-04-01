@@ -54,10 +54,10 @@ deltaETAjj            0             1.3                 -               -       
 
 
 # no cut on these variables, just want to save histograms
-#Dijet_MassAK4      			  0             +inf                 -               -               1	     10000 0 10000   SAVE
-Dijet_MassW	    			  0		+inf			-	        -	     1	     1000 0 10000    SAVE
-Dijet_MassA         			  0             +inf                 -               -               1	     1000 0 10000    SAVE
-Dijet_MassC         			  0             +inf                 -               -               1	     1000 0 10000    SAVE
+#Dijet_MassAK4      			  0             +inf                 -               -               1	     14000 0 14000   SAVE
+Dijet_MassW	    			  0		+inf			-	        -	     1	     14000 0 14000    SAVE
+Dijet_MassA         			  0             +inf                 -               -               1	     14000 0 14000    SAVE
+Dijet_MassC         			  0             +inf                 -               -               1	     14000 0 14000    SAVE
 ptHat                                   -inf            +inf                 -               -               1       500 0 10000     SAVE
 deltaPHIjj 				-inf 		+inf 		- 			- 		1 200 -3.15 3.15 SAVE
 phi_j1 					-inf 		+inf 		- - 1 200 -3.15 3.15 SAVE

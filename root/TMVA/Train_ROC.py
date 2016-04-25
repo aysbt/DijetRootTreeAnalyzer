@@ -17,18 +17,18 @@ ROOT.TMVA.Tools.Instance()
 #f1 =ROOT.TFile("/uscms_data/d3/abat/Analyzer/CMSSW_7_4_4/src/CMSDIJET/DijetRootTreeAnalyzer/Signal/QQ/M2000/histo_signal_bkg_QG1stJet_fromTree.root")
 #f2 =ROOT.TFile("/uscms_data/d3/abat/Analyzer/CMSSW_7_4_4/src/CMSDIJET/DijetRootTreeAnalyzer/Signal/GG/M2000/histo_signal_bkg_QG1stJet_fromTree.root")
 
-f1 =ROOT.TFile("/eos/uscms/store/user/abat/root_file/signal/GG/nocut/RSG_GG_50ns_M3000_reduced_skim.root")
-f2 =ROOT.TFile("/eos/uscms/store/user/abat/root_file/signal/QQ/nocut/RSG_QQ_50ns_M3000_reduced_skim.root")
-f3 =ROOT.TFile("/eos/uscms/store/user/abat/root_file/signal/QG/nocut/RSG_QG_50ns_M3000_reduced_skim.root")
+f1 =ROOT.TFile("/eos/uscms/store/user/abat/root_file/signal/GG/nocut/RSG_GG_50ns_M7000_reduced_skim.root")
+f2 =ROOT.TFile("/eos/uscms/store/user/abat/root_file/signal/QQ/nocut/RSG_QQ_50ns_M7000_reduced_skim.root")
+f3 =ROOT.TFile("/eos/uscms/store/user/abat/root_file/signal/QG/nocut/RSG_QG_50ns_M7000_reduced_skim.root")
 
-tree_s     = f2.Get("rootTupleTree/tree")
-tree_b     = f1.Get("rootTupleTree/tree")
-tree_b1    = f3.Get("rootTupleTree/tree")
+tree_s     = f3.Get("rootTupleTree/tree")
+tree_b     = f2.Get("rootTupleTree/tree")
+tree_b1    = f1.Get("rootTupleTree/tree")
 
 #file1 = ROOT.TFile("data.root")
 #tree_s = file1.Get("TreeS")
 #tree_b = file1.Get("TreeB")
-fout = ROOT.TFile("QQ_M3000.root","RECREATE")
+fout = ROOT.TFile("QG_M7000.root","RECREATE")
 
 # define factory with options
 factory = ROOT.TMVA.Factory("TMVAClassification", fout,

@@ -3,6 +3,16 @@
 from ROOT import TFile, TCanvas, TColor, gStyle, TLegend, TLatex, TH1F, TTree, TH2F
 from math import sqrt
 from array import array
+import ROOT as rt
+#import CMS_lumi,tdrstyle
+#CMS_lumi.lumi_13TeV =""
+#CMS_lumi.writeExtraText = 1
+#CMS_lumi.extraText = ""
+#CMS_lumi.lumi_sqrtS = "13 TeV"
+
+#iPos = 11
+#if( iPos==0 ): CMS_lumi.relPosX = 0.12
+#iPeriod = 4
 
 gStyle.SetOptStat(0)
 gStyle.SetLabelSize(0.06,"xy")
@@ -14,9 +24,9 @@ gStyle.SetPadRightMargin(0.1)
 gStyle.SetPadBottomMargin(0.16)
 gStyle.SetPadLeftMargin(0.12)
 
-file1 = TFile("QQ_M2000.root")
-file2 = TFile("QG_M2000.root")
-file3 = TFile("GG_M2000.root")
+file1 = TFile("QQ_M7000.root")
+file2 = TFile("QG_M7000.root")
+file3 = TFile("GG_M7000.root")
 canvas = TCanvas("c1","c1", 800, 800)
 canvas.SetTickx()
 canvas.SetTicky()
@@ -51,17 +61,28 @@ l.SetTextFont(42)
 l.SetFillColor(10)
 l.SetLineColor(10)
 l.SetBorderSize(0)
-l.AddEntry(h1,"Quark-Quark","l")
-l.AddEntry(h2,"Quark-Gluon","l")
-l.AddEntry(h3,"Gluon-Gluon","l")
+l.AddEntry(h1,"quark-quark","l")
+l.AddEntry(h2,"quark-gluon","l")
+l.AddEntry(h3,"gluon-gluon","l")
+
+#latex = rt.TLatex()
+#latex.SetNDC()
+#latex.DrawLatex(0.16,0.96,"#font[61]{CMS}")
+l1=TLatex(0.16,0.96,"#font[61]{CMS}")
+
+
 
 h1.Draw("L")
 h3.Draw("L Same")
 h2.Draw("L Same")
 l.Draw("same")
+#l1.Draw("same")
 
+
+
+#CMS_lumi.CMS_lumi(canvas,iPeriod, iPos)
 canvas.RedrawAxis()
-canvas.Print("BvsS_M2000.png")
+canvas.Print("BvsS_M7000.png")
 
 file1.Close()
 file2.Close()

@@ -3,6 +3,18 @@
 from ROOT import TFile, TCanvas, TColor, gStyle, TLegend, TLatex, TH1F, TTree, TH2F
 from math import sqrt
 from array import array
+import CMS_lumi
+lumi =2.4
+CMS_lumi.lumi_13TeV = "13 TeV"
+CMS_lumi.writeExtraText = 1
+CMS_lumi.extraText = ""
+CMS_lumi.lumi_sqrtS = "13 TeV"
+
+iPos = 11
+if( iPos==0 ): CMS_lumi.relPosX = 0.12
+iPeriod = 4
+
+
 
 gStyle.SetOptStat(0)
 gStyle.SetLabelSize(0.06,"xy")
@@ -56,6 +68,7 @@ h1.Draw("HIST")
 h2.Draw("HISTsame")
 #h3.Draw("HISTsame")
 l.Draw("same")
+CMS_lumi.CMS_lumi(canvas,iPeriod, iPos)
 canvas.RedrawAxis()
 canvas.Print("ROC.png")
 

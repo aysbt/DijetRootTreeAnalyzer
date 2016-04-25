@@ -246,8 +246,8 @@ NDAT = h_dat.GetEntries()
 NQCD = hist_allCutsQCD.Integral(0,hist_allCutsQCD.GetNbinsX()+1)
 NSIG = h_sig.Integral(0,hist_allCutsQCD.GetNbinsX()+1)
 ## k factor calculated including overflow and underflow
-kFactor_nocut = NDAT/NQCD
-kFactor = 1
+kFactor = NDAT/NQCD
+#kFactor = 1
 print ("kFactor set to %f" % kFactor)
 print("NQCD = "+str(NQCD))
 print("NDAT = "+str(NDAT))

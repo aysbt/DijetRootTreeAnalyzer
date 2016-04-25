@@ -9,7 +9,7 @@ setTDRStyle();
 
 TString dir = ""; 
 TFile *f1   = TFile::Open(dir+
-                        TString("../output_nocut/plots_data4T_Run2015D_Silverjson_2445pb-1_JEC_Summer15_25nsV6_withSF_nocut/leading_wide_eta.root"),"READ");
+                        TString("../output_nocut/plots_data4T_Run2015D_Silverjson_2445pb-1_JEC_Summer15_25nsV6_withSF_nocut/leading_QGLikelihood.root "),"READ");
 
 TH1F *D_eta  = (TH1F*)  f1->Get("h_dat");
 TH1F *M_eta  = (TH1F*)  f1->Get("hist_allCutsQCD");
@@ -19,7 +19,7 @@ M_eta ->Rebin(3);
 TCanvas *c1  = new TCanvas ("c1","Data QCD Comparation" ,800,800);
 M_eta->GetYaxis()->SetTitleOffset(1.35);
 M_eta->GetYaxis()->SetLabelSize(0.04);
-M_eta->GetXaxis()->SetTitle("#eta leading jets");
+M_eta->GetXaxis()->SetTitle("q/g LD 1 st jet");
 M_eta->GetYaxis()->SetTitle("Entries");
 M_eta->SetLineColor(kRed);
 M_eta->SetFillColor(kWhite);

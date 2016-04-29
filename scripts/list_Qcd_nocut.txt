@@ -1,0 +1,9 @@
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD_FEB/nocut/MC_300_nocut_reduced_skim.root 7823
+/uscms_data/d3/abat/13TEV_Dijet/qcd/nocut/CMSSW_7_4_4/src/CMSDIJET/DijetRootTreeAnalyzer/output/MC_470_nocut_reduced_skim.root 648.2
+/uscms_data/d3/abat/13TEV_Dijet/qcd/nocut/CMSSW_7_4_4/src/CMSDIJET/DijetRootTreeAnalyzer/output/MC_600_nocut_reduced_skim.root 186.9
+/uscms_data/d3/abat/13TEV_Dijet/qcd/nocut/CMSSW_7_4_4/src/CMSDIJET/DijetRootTreeAnalyzer/output/MC_800_nocut_reduced_skim.root 32.293
+/uscms_data/d3/abat/13TEV_Dijet/qcd/nocut/CMSSW_7_4_4/src/CMSDIJET/DijetRootTreeAnalyzer/output/MC_1000_nocut_reduced_skim.root 9.4183
+/uscms_data/d3/abat/13TEV_Dijet/qcd/nocut/CMSSW_7_4_4/src/CMSDIJET/DijetRootTreeAnalyzer/output/MC_1400_nocut_reduced_skim.root 0.84265
+/uscms_data/d3/abat/13TEV_Dijet/qcd/nocut/CMSSW_7_4_4/src/CMSDIJET/DijetRootTreeAnalyzer/output/MC_1800_nocut_reduced_skim.root 0.114943
+/uscms_data/d3/abat/13TEV_Dijet/qcd/nocut/CMSSW_7_4_4/src/CMSDIJET/DijetRootTreeAnalyzer/output/MC_2400_nocut_reduced_skim.root 0.0068298
+/uscms_data/d3/abat/13TEV_Dijet/qcd/nocut/CMSSW_7_4_4/src/CMSDIJET/DijetRootTreeAnalyzer/output/MC_3200_nocut_reduced_skim.root 0.0001654454

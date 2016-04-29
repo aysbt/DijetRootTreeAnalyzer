@@ -1,0 +1,9 @@
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD_FEB/6cut/Big/MC_300_Big_06_reduced_skim.root 7823
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD_FEB/6cut/Big/MC_470_Big_06_reduced_skim.root 648.2
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD_FEB/6cut/Big/MC_600_Big_06_reduced_skim.root 186.9
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD_FEB/6cut/Big/MC_800_Big_06_reduced_skim.root 32.293
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD_FEB/6cut/Big/MC_1000_Big_06_reduced_skim.root 9.4183
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD_FEB/6cut/Big/MC_1400_Big_06_reduced_skim.root 0.8426
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD_FEB/6cut/Big/MC_1800_Big_06_reduced_skim.root 0.114943
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD_FEB/6cut/Big/MC_2400_Big_06_reduced_skim.root 0.0068298
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD_FEB/6cut/Big/MC_3200_Big_06_reduced_skim.root 0.000165445

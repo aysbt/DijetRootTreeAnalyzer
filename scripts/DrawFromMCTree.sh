@@ -1,0 +1,9 @@
+#python DrawFromTree.py --var mjj --xmin 0 --xmax 10000 --bin 10000 --xtitle "m(jj)" --logy --outputDir MC_Big_01 --inputList list_QCD_Big_01.txt --lumi 2445
+#python DrawFromTree.py --var mjj --xmin 0 --xmax 10000 --bin 10000 --xtitle "m(jj)" --logy --outputDir MC_Big_02 --inputList list_QCD_Big_02.txt --lumi 2445
+python DrawFromTree.py --var mjj --xmin 0 --xmax 10000 --bin 10000 --xtitle "m(jj)" --logy --outputDir MC_Big_03 --inputList list_QCD_Big_03.txt --lumi 2445
+python DrawFromTree.py --var mjj --xmin 0 --xmax 10000 --bin 10000 --xtitle "m(jj)" --logy --outputDir MC_Big_04 --inputList list_QCD_Big_04.txt --lumi 2445
+python DrawFromTree.py --var mjj --xmin 0 --xmax 10000 --bin 10000 --xtitle "m(jj)" --logy --outputDir MC_Big_05 --inputList list_QCD_Big_05.txt --lumi 2445
+python DrawFromTree.py --var mjj --xmin 0 --xmax 10000 --bin 10000 --xtitle "m(jj)" --logy --outputDir MC_Big_06 --inputList list_QCD_Big_06.txt --lumi 2445
+python DrawFromTree.py --var mjj --xmin 0 --xmax 10000 --bin 10000 --xtitle "m(jj)" --logy --outputDir MC_Big_07 --inputList list_QCD_Big_07.txt --lumi 2445
+python DrawFromTree.py --var mjj --xmin 0 --xmax 10000 --bin 10000 --xtitle "m(jj)" --logy --outputDir MC_Big_08 --inputList list_QCD_Big_08.txt --lumi 2445
+python DrawFromTree.py --var mjj --xmin 0 --xmax 10000 --bin 10000 --xtitle "m(jj)" --logy --outputDir MC_Big_09 --inputList list_QCD_Big_09.txt --lumi 2445

@@ -1,0 +1,9 @@
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD/nocut/300_reduced_skim.root 7823.
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD/nocut/470_reduced_skim.root 648.2
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD/nocut/600_reduced_skim.root 186.9
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD/nocut/800_reduced_skim.root 32.293
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD/nocut/1000_reduced_skim.root 9.4183
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD/nocut/1400_reduced_skim.root 0.8426
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD/nocut/1800_reduced_skim.root 0.114943
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD/nocut/2400_reduced_skim.root 0.0068298
+root://cmsxrootd.fnal.gov//store/user/abat/root_file/QCD/nocut/3200_reduced_skim.root 0.0001655445

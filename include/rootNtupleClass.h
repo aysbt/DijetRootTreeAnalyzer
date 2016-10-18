@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////
 // This class has been automatically generated on
-// Sun Mar  6 08:13:44 2016 by ROOT version 6.02/05
+// Tue Oct 18 04:36:09 2016 by ROOT version 6.06/01
 // from TChain dijets/events/
 //////////////////////////////////////////////////////////
 
@@ -103,6 +103,7 @@ public :
    vector<float>   *jetMassAK4;
    vector<float>   *jetEnergyAK4;
    vector<float>   *jetAreaAK4;
+   vector<float>   *jetCSVAK4;
    vector<float>   *jetChfAK4;
    vector<float>   *jetNhfAK4;
    vector<float>   *jetPhfAK4;
@@ -125,31 +126,6 @@ public :
    vector<float>   *qgptDAK4;
    vector<int>     *qgmultAK4;
    vector<int>     *partonAK4;
-   vector<float>   *jetPtAK4matchCaloJet;
-   vector<float>   *jetEmfAK4matchCaloJet;
-   vector<float>   *jetPtAK4Calo;
-   vector<float>   *jetJecAK4Calo;
-   vector<float>   *jetEtaAK4Calo;
-   vector<float>   *jetPhiAK4Calo;
-   vector<float>   *jetMassAK4Calo;
-   vector<float>   *jetEnergyAK4Calo;
-   vector<float>   *jetAreaAK4Calo;
-   vector<float>   *jetEmfAK4Calo;
-   vector<float>   *jetPtAK4PFCluster;
-   vector<float>   *jetJecAK4PFCluster;
-   vector<float>   *jetEtaAK4PFCluster;
-   vector<float>   *jetPhiAK4PFCluster;
-   vector<float>   *jetMassAK4PFCluster;
-   vector<float>   *jetEnergyAK4PFCluster;
-   vector<float>   *jetAreaAK4PFCluster;
-   vector<float>   *jetPtAK4PFCalo;
-   vector<float>   *jetJecAK4PFCalo;
-   vector<float>   *jetEtaAK4PFCalo;
-   vector<float>   *jetPhiAK4PFCalo;
-   vector<float>   *jetMassAK4PFCalo;
-   vector<float>   *jetEnergyAK4PFCalo;
-   vector<float>   *jetAreaAK4PFCalo;
-   vector<float>   *jetEmfAK4PFCalo;
    vector<float>   *jetPtAK8;
    vector<float>   *jetJecAK8;
    vector<float>   *jetEtaAK8;
@@ -157,6 +133,7 @@ public :
    vector<float>   *jetMassAK8;
    vector<float>   *jetEnergyAK8;
    vector<float>   *jetAreaAK8;
+   vector<float>   *jetCSVAK8;
    vector<float>   *jetChfAK8;
    vector<float>   *jetNhfAK8;
    vector<float>   *jetPhfAK8;
@@ -252,6 +229,7 @@ public :
    TBranch        *b_jetMassAK4;   //!
    TBranch        *b_jetEnergyAK4;   //!
    TBranch        *b_jetAreaAK4;   //!
+   TBranch        *b_jetCSVAK4;   //!
    TBranch        *b_jetChfAK4;   //!
    TBranch        *b_jetNhfAK4;   //!
    TBranch        *b_jetPhfAK4;   //!
@@ -274,31 +252,6 @@ public :
    TBranch        *b_qgptDAK4;   //!
    TBranch        *b_qgmultAK4;   //!
    TBranch        *b_partonAK4;   //!
-   TBranch        *b_jetPtAK4matchCaloJet;   //!
-   TBranch        *b_jetEmfAK4matchCaloJet;   //!
-   TBranch        *b_jetPtAK4Calo;   //!
-   TBranch        *b_jetJecAK4Calo;   //!
-   TBranch        *b_jetEtaAK4Calo;   //!
-   TBranch        *b_jetPhiAK4Calo;   //!
-   TBranch        *b_jetMassAK4Calo;   //!
-   TBranch        *b_jetEnergyAK4Calo;   //!
-   TBranch        *b_jetAreaAK4Calo;   //!
-   TBranch        *b_jetEmfAK4Calo;   //!
-   TBranch        *b_jetPtAK4PFCluster;   //!
-   TBranch        *b_jetJecAK4PFCluster;   //!
-   TBranch        *b_jetEtaAK4PFCluster;   //!
-   TBranch        *b_jetPhiAK4PFCluster;   //!
-   TBranch        *b_jetMassAK4PFCluster;   //!
-   TBranch        *b_jetEnergyAK4PFCluster;   //!
-   TBranch        *b_jetAreaAK4PFCluster;   //!
-   TBranch        *b_jetPtAK4PFCalo;   //!
-   TBranch        *b_jetJecAK4PFCalo;   //!
-   TBranch        *b_jetEtaAK4PFCalo;   //!
-   TBranch        *b_jetPhiAK4PFCalo;   //!
-   TBranch        *b_jetMassAK4PFCalo;   //!
-   TBranch        *b_jetEnergyAK4PFCalo;   //!
-   TBranch        *b_jetAreaAK4PFCalo;   //!
-   TBranch        *b_jetEmfAK4PFCalo;   //!
    TBranch        *b_jetPtAK8;   //!
    TBranch        *b_jetJecAK8;   //!
    TBranch        *b_jetEtaAK8;   //!
@@ -306,6 +259,7 @@ public :
    TBranch        *b_jetMassAK8;   //!
    TBranch        *b_jetEnergyAK8;   //!
    TBranch        *b_jetAreaAK8;   //!
+   TBranch        *b_jetCSVAK8;   //!
    TBranch        *b_jetChfAK8;   //!
    TBranch        *b_jetNhfAK8;   //!
    TBranch        *b_jetPhfAK8;   //!
@@ -394,7 +348,7 @@ rootNtupleClass::rootNtupleClass(TTree *tree) : fChain(0)
       // The following code should be used if you want this class to access a chain
       // of trees.
       TChain * chain = new TChain("dijets/events","");
-      chain->Add("root://cmsxrootd.fnal.gov//store/user/abat/QCD_Signal_27AUG/RSGravitonToQuarkQuark_kMpl01_M_500_TuneCUETP8M1_13TeV_pythia8/crab_RSG_QQ_M500_13TEV_50ns/150831_162618/0000/RSG_QQ_M500_13TEV_50ns.root/dijets/events");
+      chain->Add("root://cmsxrootd.fnal.gov//store/user/abat/Run2016/SignalRun2016/GG/RSGravitonToGluonGluon_kMpl01_M_500_TuneCUETP8M1_13TeV_pythia8/crab_RSGtoGG_M500_RunIISpring16MiniAODv2/161017_122844/0000/qg_tag_dijet_MC_localrootfile_1.root/dijets/events");
       tree = chain;
 #endif // SINGLE_TREE
 
@@ -461,6 +415,7 @@ void rootNtupleClass::Init(TTree *tree)
    jetMassAK4 = 0;
    jetEnergyAK4 = 0;
    jetAreaAK4 = 0;
+   jetCSVAK4 = 0;
    jetChfAK4 = 0;
    jetNhfAK4 = 0;
    jetPhfAK4 = 0;
@@ -483,31 +438,6 @@ void rootNtupleClass::Init(TTree *tree)
    qgptDAK4 = 0;
    qgmultAK4 = 0;
    partonAK4 = 0;
-   jetPtAK4matchCaloJet = 0;
-   jetEmfAK4matchCaloJet = 0;
-   jetPtAK4Calo = 0;
-   jetJecAK4Calo = 0;
-   jetEtaAK4Calo = 0;
-   jetPhiAK4Calo = 0;
-   jetMassAK4Calo = 0;
-   jetEnergyAK4Calo = 0;
-   jetAreaAK4Calo = 0;
-   jetEmfAK4Calo = 0;
-   jetPtAK4PFCluster = 0;
-   jetJecAK4PFCluster = 0;
-   jetEtaAK4PFCluster = 0;
-   jetPhiAK4PFCluster = 0;
-   jetMassAK4PFCluster = 0;
-   jetEnergyAK4PFCluster = 0;
-   jetAreaAK4PFCluster = 0;
-   jetPtAK4PFCalo = 0;
-   jetJecAK4PFCalo = 0;
-   jetEtaAK4PFCalo = 0;
-   jetPhiAK4PFCalo = 0;
-   jetMassAK4PFCalo = 0;
-   jetEnergyAK4PFCalo = 0;
-   jetAreaAK4PFCalo = 0;
-   jetEmfAK4PFCalo = 0;
    jetPtAK8 = 0;
    jetJecAK8 = 0;
    jetEtaAK8 = 0;
@@ -515,6 +445,7 @@ void rootNtupleClass::Init(TTree *tree)
    jetMassAK8 = 0;
    jetEnergyAK8 = 0;
    jetAreaAK8 = 0;
+   jetCSVAK8 = 0;
    jetChfAK8 = 0;
    jetNhfAK8 = 0;
    jetPhfAK8 = 0;
@@ -597,6 +528,7 @@ void rootNtupleClass::Init(TTree *tree)
    fChain->SetBranchAddress("jetMassAK4", &jetMassAK4, &b_jetMassAK4);
    fChain->SetBranchAddress("jetEnergyAK4", &jetEnergyAK4, &b_jetEnergyAK4);
    fChain->SetBranchAddress("jetAreaAK4", &jetAreaAK4, &b_jetAreaAK4);
+   fChain->SetBranchAddress("jetCSVAK4", &jetCSVAK4, &b_jetCSVAK4);
    fChain->SetBranchAddress("jetChfAK4", &jetChfAK4, &b_jetChfAK4);
    fChain->SetBranchAddress("jetNhfAK4", &jetNhfAK4, &b_jetNhfAK4);
    fChain->SetBranchAddress("jetPhfAK4", &jetPhfAK4, &b_jetPhfAK4);
@@ -619,31 +551,6 @@ void rootNtupleClass::Init(TTree *tree)
    fChain->SetBranchAddress("qgptDAK4", &qgptDAK4, &b_qgptDAK4);
    fChain->SetBranchAddress("qgmultAK4", &qgmultAK4, &b_qgmultAK4);
    fChain->SetBranchAddress("partonAK4", &partonAK4, &b_partonAK4);
-   fChain->SetBranchAddress("jetPtAK4matchCaloJet", &jetPtAK4matchCaloJet, &b_jetPtAK4matchCaloJet);
-   fChain->SetBranchAddress("jetEmfAK4matchCaloJet", &jetEmfAK4matchCaloJet, &b_jetEmfAK4matchCaloJet);
-   fChain->SetBranchAddress("jetPtAK4Calo", &jetPtAK4Calo, &b_jetPtAK4Calo);
-   fChain->SetBranchAddress("jetJecAK4Calo", &jetJecAK4Calo, &b_jetJecAK4Calo);
-   fChain->SetBranchAddress("jetEtaAK4Calo", &jetEtaAK4Calo, &b_jetEtaAK4Calo);
-   fChain->SetBranchAddress("jetPhiAK4Calo", &jetPhiAK4Calo, &b_jetPhiAK4Calo);
-   fChain->SetBranchAddress("jetMassAK4Calo", &jetMassAK4Calo, &b_jetMassAK4Calo);
-   fChain->SetBranchAddress("jetEnergyAK4Calo", &jetEnergyAK4Calo, &b_jetEnergyAK4Calo);
-   fChain->SetBranchAddress("jetAreaAK4Calo", &jetAreaAK4Calo, &b_jetAreaAK4Calo);
-   fChain->SetBranchAddress("jetEmfAK4Calo", &jetEmfAK4Calo, &b_jetEmfAK4Calo);
-   fChain->SetBranchAddress("jetPtAK4PFCluster", &jetPtAK4PFCluster, &b_jetPtAK4PFCluster);
-   fChain->SetBranchAddress("jetJecAK4PFCluster", &jetJecAK4PFCluster, &b_jetJecAK4PFCluster);
-   fChain->SetBranchAddress("jetEtaAK4PFCluster", &jetEtaAK4PFCluster, &b_jetEtaAK4PFCluster);
-   fChain->SetBranchAddress("jetPhiAK4PFCluster", &jetPhiAK4PFCluster, &b_jetPhiAK4PFCluster);
-   fChain->SetBranchAddress("jetMassAK4PFCluster", &jetMassAK4PFCluster, &b_jetMassAK4PFCluster);
-   fChain->SetBranchAddress("jetEnergyAK4PFCluster", &jetEnergyAK4PFCluster, &b_jetEnergyAK4PFCluster);
-   fChain->SetBranchAddress("jetAreaAK4PFCluster", &jetAreaAK4PFCluster, &b_jetAreaAK4PFCluster);
-   fChain->SetBranchAddress("jetPtAK4PFCalo", &jetPtAK4PFCalo, &b_jetPtAK4PFCalo);
-   fChain->SetBranchAddress("jetJecAK4PFCalo", &jetJecAK4PFCalo, &b_jetJecAK4PFCalo);
-   fChain->SetBranchAddress("jetEtaAK4PFCalo", &jetEtaAK4PFCalo, &b_jetEtaAK4PFCalo);
-   fChain->SetBranchAddress("jetPhiAK4PFCalo", &jetPhiAK4PFCalo, &b_jetPhiAK4PFCalo);
-   fChain->SetBranchAddress("jetMassAK4PFCalo", &jetMassAK4PFCalo, &b_jetMassAK4PFCalo);
-   fChain->SetBranchAddress("jetEnergyAK4PFCalo", &jetEnergyAK4PFCalo, &b_jetEnergyAK4PFCalo);
-   fChain->SetBranchAddress("jetAreaAK4PFCalo", &jetAreaAK4PFCalo, &b_jetAreaAK4PFCalo);
-   fChain->SetBranchAddress("jetEmfAK4PFCalo", &jetEmfAK4PFCalo, &b_jetEmfAK4PFCalo);
    fChain->SetBranchAddress("jetPtAK8", &jetPtAK8, &b_jetPtAK8);
    fChain->SetBranchAddress("jetJecAK8", &jetJecAK8, &b_jetJecAK8);
    fChain->SetBranchAddress("jetEtaAK8", &jetEtaAK8, &b_jetEtaAK8);
@@ -651,6 +558,7 @@ void rootNtupleClass::Init(TTree *tree)
    fChain->SetBranchAddress("jetMassAK8", &jetMassAK8, &b_jetMassAK8);
    fChain->SetBranchAddress("jetEnergyAK8", &jetEnergyAK8, &b_jetEnergyAK8);
    fChain->SetBranchAddress("jetAreaAK8", &jetAreaAK8, &b_jetAreaAK8);
+   fChain->SetBranchAddress("jetCSVAK8", &jetCSVAK8, &b_jetCSVAK8);
    fChain->SetBranchAddress("jetChfAK8", &jetChfAK8, &b_jetChfAK8);
    fChain->SetBranchAddress("jetNhfAK8", &jetNhfAK8, &b_jetNhfAK8);
    fChain->SetBranchAddress("jetPhfAK8", &jetPhfAK8, &b_jetPhfAK8);

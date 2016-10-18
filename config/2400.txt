@@ -1,1 +1,0 @@
-root://cmsxrootd.fnal.gov//store/user/abat/QCD_Signal_27AUG/QCD_Pt_2400to3200_TuneCUETP8M1_13TeV_pythia8/crab_QCD_pt_2400-3200_13TEV_50ns/150827_200108/0000/QCD_Pt_2400-3200_50ns.root

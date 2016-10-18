@@ -204,7 +204,7 @@ void analysisClass::Loop()
      // new JECs could change the jet pT ordering. the vector below
      // holds sorted jet indices after the new JECs had been applied
      std::vector<unsigned> sortedJetIdx;
-     bool isData = 1;
+     bool isData = 0;
      if(idx_InTimeBX > -1 ) isData = 0;
      else isData = 1;
 
@@ -368,12 +368,10 @@ void analysisClass::Loop()
        if(no_jets_ak4>=2)
 	 {
 	   if(fabs(jetEtaAK4->at(sortedJetIdx[0])) < getPreCutValue1("jetFidRegion") 
-	      && (jecFactors[sortedJetIdx[0]]/jetJecAK4->at(sortedJetIdx[0]))*jetPtAK4->at(sortedJetIdx[sortedJetIdx[0]]) > getPreCutValue1("pt0Cut")
-              && qgLDAK4->at(sortedJetIdx[0])>=getPreCutValue1("qgRegion")) 
+	      && (jecFactors[sortedJetIdx[0]]/jetJecAK4->at(sortedJetIdx[0]))*jetPtAK4->at(sortedJetIdx[sortedJetIdx[0]]) > getPreCutValue1("pt0Cut") )
 	     {
 	       if(fabs(jetEtaAK4->at(sortedJetIdx[1])) < getPreCutValue1("jetFidRegion") 
-		  && (jecFactors[sortedJetIdx[1]]/jetJecAK4->at(sortedJetIdx[1]))*jetPtAK4->at(sortedJetIdx[1]) > getPreCutValue1("pt1Cut") 
-                  && qgLDAK4->at(sortedJetIdx[1])>=getPreCutValue1("qgRegion"))
+		  && (jecFactors[sortedJetIdx[1]]/jetJecAK4->at(sortedJetIdx[1]))*jetPtAK4->at(sortedJetIdx[1]) > getPreCutValue1("pt1Cut") )
                 {
 		   TLorentzVector jet1, jet2, jet1_shift, jet2_shift;
 		   jet1.SetPtEtaPhiM( (jecFactors[sortedJetIdx[0]]/jetJecAK4->at(sortedJetIdx[0])) *jetPtAK4->at(sortedJetIdx[0])
@@ -469,13 +467,11 @@ void analysisClass::Loop()
        //cout << "pt j1 " << (jecFactors[sortedJetIdx[0]]/jetJecAK4->at(sortedJetIdx[0])) *jetPtAK4->at(sortedJetIdx[0]) << endl;
        {
 	 if(fabs(jetEtaAK4->at(sortedJetIdx[0])) < getPreCutValue1("jetFidRegion") 
-	    && (jecFactors[sortedJetIdx[0]]/jetJecAK4->at(sortedJetIdx[0]))*jetPtAK4->at(sortedJetIdx[0]) > getPreCutValue1("pt0Cut")
-            && qgLDAK4->at(sortedJetIdx[0])>=getPreCutValue1("qgRegion"))
+	    && (jecFactors[sortedJetIdx[0]]/jetJecAK4->at(sortedJetIdx[0]))*jetPtAK4->at(sortedJetIdx[0]) > getPreCutValue1("pt0Cut") )
            {
 	   
 	     if(fabs(jetEtaAK4->at(sortedJetIdx[1])) < getPreCutValue1("jetFidRegion") 
-		&& (jecFactors[sortedJetIdx[1]]/jetJecAK4->at(sortedJetIdx[1]))*jetPtAK4->at(sortedJetIdx[1]) > getPreCutValue1("pt1Cut")
-                && qgLDAK4->at(sortedJetIdx[1])>=getPreCutValue1("qgRegion"))
+		&& (jecFactors[sortedJetIdx[1]]/jetJecAK4->at(sortedJetIdx[1]))*jetPtAK4->at(sortedJetIdx[1]) > getPreCutValue1("pt1Cut") )
               {
 		 //cout << "filling ak4j1 and ak4j2" << endl;
 		 //cout << "pt ak4 j1 = " << (jecFactors[sortedJetIdx[0]]/jetJecAK4->at(sortedJetIdx[0])) *jetPtAK4->at(sortedJetIdx[0]) << endl;
@@ -518,7 +514,7 @@ void analysisClass::Loop()
      fillVariableWithValue("nJet",widejets.size());
      fillVariableWithValue("metSig",metSig);
      fillVariableWithValue("Nak4",Nak4);
-     fillVariableWithValue ( "PassJSON", passJSON (runNo, lumi, isData));
+   //fillVariableWithValue ( "PassJSON", passJSON (runNo, lumi, isData));
 
      if( AK4jets.size() >=1 ){
        //cout << "AK4jets.size() " <<  AK4jets.size() << endl;
@@ -527,7 +523,7 @@ void analysisClass::Loop()
        fillVariableWithValue( "pTAK4_j1", AK4jets[0].Pt());
        fillVariableWithValue( "etaAK4_j1", AK4jets[0].Eta());
        fillVariableWithValue( "phiAK4_j1", AK4jets[0].Phi());
-       fillVariableWithValue( "jetPtAK4matchCaloJet_j1", jetPtAK4matchCaloJet->at(sortedJetIdx[0]));
+ //      fillVariableWithValue( "jetPtAK4matchCaloJet_j1", jetPtAK4matchCaloJet->at(sortedJetIdx[0]));
        fillVariableWithValue( "jetJecAK4_j1", jecFactors[sortedJetIdx[0]] );
        fillVariableWithValue( "jetJecUncAK4_j1", jecUncertainty[sortedJetIdx[0]] );
        //jetID
@@ -555,7 +551,7 @@ void analysisClass::Loop()
        fillVariableWithValue( "pTAK4_j2", AK4jets[1].Pt() );
        fillVariableWithValue( "etaAK4_j2", AK4jets[1].Eta());
        fillVariableWithValue( "phiAK4_j2", AK4jets[1].Phi());
-       fillVariableWithValue( "jetPtAK4matchCaloJet_j2", jetPtAK4matchCaloJet->at(sortedJetIdx[1]));
+ //      fillVariableWithValue( "jetPtAK4matchCaloJet_j2", jetPtAK4matchCaloJet->at(sortedJetIdx[1]));
        fillVariableWithValue( "jetJecAK4_j2", jecFactors[sortedJetIdx[1]]); 
        fillVariableWithValue( "jetJecUncAK4_j2", jecUncertainty[sortedJetIdx[1]] );
        //jetID
@@ -692,8 +688,7 @@ void analysisClass::Loop()
      
      // optional call to fill a skim with the full content of the input roottuple
      //if( passedCut("nJetFinal") ) fillSkimTree();
-     if(    passedCut("PassJSON")
-         && passedCut("nVtx") 
+     if(  passedCut("nVtx") 
 	 && passedCut("IdTight_j1")
 	 && passedCut("IdTight_j2")
 	 && passedCut("nJet")

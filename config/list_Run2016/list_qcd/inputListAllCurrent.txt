@@ -1,0 +1,1 @@
+/uscms_data/d3/abat/Run2_2016/TreeAnalyzer/Dijet2016_8_0_10/src/CMSDIJET/DijetRootTreeAnalyzer/config/list_Run2016/list_qcd/qg_tag_dijet_MC_localrootfile.txt

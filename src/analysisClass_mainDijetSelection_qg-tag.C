@@ -145,8 +145,7 @@ void analysisClass::Loop()
    // TH1F *h_dijetmass = new TH1F("h_dijetmass","Dijet Mass",nMassBins ,massBoundaries);
    // h_dijetmass->Sumw2();
 //~//
-   char* HLTname[50] = {"noTrig","PFHT475","PFHT800","PFHT650MJJ900","PFHT800_OR_PFHT650MJJ900","PFHT800_noPFHT475", 
-                        "Mu45Eta2p1", "PFHT800AndMu45Eta2p1"};
+   char* HLTname[50] = {"noTrig","PFHT475","PFHT800","PFHT650MJJ900","PFHT800_OR_PFHT650MJJ900","PFHT800_noPFHT475","Mu45Eta2p1", "PFHT800AndMu45Eta2p1"};
    TH1F* h_mjj_HLTpass[8];
    char name_histoHLT[50];
    for (int i=0; i<8; i++){  
